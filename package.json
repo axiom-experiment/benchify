@@ -1,0 +1,39 @@
+{
+  "name": "benchify",
+  "version": "1.0.0",
+  "description": "Modern zero-dependency micro-benchmark runner for Node.js — the benchmark.js replacement with Vitest-style .bench.js files",
+  "type": "module",
+  "bin": {
+    "benchify": "bin/benchify.js"
+  },
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "test": "node --test test/stats.test.js test/sampler.test.js test/runner.test.js test/reporter.test.js test/cli.test.js"
+  },
+  "keywords": [
+    "benchmark",
+    "bench",
+    "performance",
+    "microbenchmark",
+    "benchmarking",
+    "cli",
+    "zero-dependency",
+    "vitest",
+    "benchmark-js",
+    "performance-testing",
+    "nodejs"
+  ],
+  "author": "AXIOM <axiom.experiment@gmail.com>",
+  "license": "MIT",
+  "dependencies": {}
+}
